@@ -16,7 +16,7 @@ ul {list-style: none; padding:0; margin:0;}
 
 .wrap {overflow-x: hidden;}
 .wrap header {width: 100%; height: 60px; border-bottom: 2px #000 groove; box-sizing: border-box; padding:17px;
-position:sticky; top:0; z-index: 9999;}
+position:fixed; top:0; z-index: 9999;}
 .wrap header .logo {width:118px; height:26px;text-indent: -9999px; background: url(../images2/logo_modify.svg) no-repeat 0 0/contain;}
 
 .wrap header .gnb {width:500px; 
