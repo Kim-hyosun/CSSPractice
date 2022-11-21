@@ -10,7 +10,7 @@
   <!-- og -->
   <meta property ="og:title" content="CsspracticeEx12">
   <meta property ="og:url" content="#">
-  <meta property ="og:image" content="./images2/opengraph.jpg">
+  <meta property ="og:image" content="./images2/open.jpg">
   <meta property ="og:description" content="Ezencomputer;CsspracticeEx12">
   <meta property ="og:type" content="website">
 
@@ -27,7 +27,7 @@
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <div class="header">
       <h1 class="logo"><a href="#">logo</a></h1>
       <ul class="gnb">
         <li><a href="#">ABOUT</a>
@@ -65,7 +65,46 @@
         <li><a href="#">JOIN</a></li>
       </ul>
       <div class="top_btn"><a href="#"><span class="material-symbols-rounded">expand_less</span></a></div>
-    </header>
+    </div>
+    <div class= "header" id="navbar">
+      <h1 class="logo"><a href="#">logo</a></h1>
+      <ul class="gnb">
+        <li><a href="#">ABOUT</a>
+          <ul class="submenu">
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">SERVICE</a>
+          <ul class="submenu">
+          <li><a href="#">MENU1</a></li>
+          <li><a href="#">MENU2</a></li>
+          <li><a href="#">MENU3</a></li>
+        </ul>
+      </li>
+        <li><a href="#">PRODUCT</a>
+          <ul class="submenu">
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">BOARD</a>
+          <ul class="submenu">
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="register">
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="#">JOIN</a></li>
+      </ul>
+      <div class="top_btn"><a href="#"><span class="material-symbols-rounded">expand_less</span></a></div>
+    </div>
     <div class="ft_bg"></div>
     <main>
       <article class="art1">
@@ -108,15 +147,15 @@
           <figcaption><strong>1. Brokerage</strong><br>theme does everything you could possibly want it to do.</figcaption>
         </figure>
         <figure>
-          <img src="./images2/grid_img8.jpg" alt="사진">
+          <img src="./images2/grid_img5.jpg" alt="사진">
           <figcaption><strong>2. Banking</strong><br>theme does everything you could possibly want it to do.</figcaption>
         </figure>
         <figure>
-          <img src="./images2/grid_img4.jpg" alt="사진">
+          <img src="./images2/web_img21.jpg" alt="사진">
           <figcaption><strong>3. Contracts</strong><br>theme does everything you could possibly want it to do.</figcaption>
         </figure>
         <figure>
-          <img src="./images2/grid_img5.jpg" alt="사진">
+          <img src="./images2/web_img23.jpg" alt="사진">
           <figcaption><strong>4. agency</strong><br>theme does everything you could possibly want it to do.</figcaption>
         </figure>
         </div>
@@ -143,10 +182,10 @@
        <section><img src="./images2/grid_img1.jpg" alt="사진">
          <div class="txt"><h5>title2</h5>
          <p>헤일 한 별 하나에 하나에 내린 듯합니다. 못 내 이름과, 시인의 별 같이 추억과 까닭입니다.</p></div></section>
-      <section><img src="./images2/grid_img3.jpg" alt="사진">
+      <section><img src="./images2/web_img14.jpg" alt="사진">
         <div class="txt"><h5>title3</h5>
         <p>헤일 한 별 하나에 하나에 내린 듯합니다. 못 내 이름과, 시인의 별 같이 추억과 까닭입니다.</p></div></section>
-      <section><img src="./images2/grid_img5.jpg" alt="사진">
+      <section><img src="./images2/web_img17.jpg" alt="사진">
          <div class="txt"><h5>title4</h5>
          <p>헤일 한 별 하나에 하나에 내린 듯합니다. 못 내 이름과, 시인의 별 같이 추억과 까닭입니다.</p></div></section>
         </div>
@@ -172,5 +211,16 @@
     </main>
     <footer>Copyright ⓒ 2022 All Rights Reserved by DYAMI.<br>Terms of Use / Privacy Policy</footer>
   </div>
+
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {document.getElementById("navbar").style.top = "0";}
+
+    else {document.getElementById("navbar").style.top = "-62px"; }
+  }
+    
+  </script>
 </body>
 </html>
