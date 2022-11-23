@@ -42,11 +42,11 @@ display: flex;}
 
 .wrap #navbar { background-color: #fff; position:fixed; top:-62px; width:100%; display: block; transition: top 1ms;}
 
-.wrap .ft_bg {width: 100%; height:100vh; background: #fff url(../images2/web_img13.jpg) fixed 0 0/cover;
+.wrap .ft_bg {width: 100%; height:100vh; background: #fff url(../images2/web_bg1.jpg) fixed 0 0/cover;
 position:relative; top:0; z-index: 99;}
 
 :is(.wrap main) .art3 h2, .art5 h2, .art6 h2, .art7 h2 {height: 5vw; text-align: center;}
-.wrap main .art1 {width: 90vw; margin: 1vw auto 4vw; display: grid; grid-template-columns: repeat(2, 45vw);}
+.wrap main .art1 {width: 90vw; margin: 4vw auto; display: grid; grid-template-columns: repeat(2, 45vw);}
 .wrap main .art1 .txt {height: 26vw; padding:7vw 2vw; box-sizing: border-box;}
 .wrap main .art1 .txt h3{font-size: 2em;}
 .wrap main .art1 .txt p{font-size: 1.1em;}
