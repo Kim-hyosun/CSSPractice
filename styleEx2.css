@@ -104,7 +104,8 @@ main .art1 .contentBox .ms .txt .ghostbtn {margin:0; padding: 6px 15px 5px; font
 main .art2 {margin:40px auto; display: grid; grid-template-columns: 2fr 1fr;} 
 main .art2 .imgbox {width: 62vw; margin:2vw;}
 main .art2 .txt {width: 28vw; text-align: justify;}
-main .art2 .txt h2, main .art3 .txt h2{margin-top:2vw;}
+main .art3 .txt h2{margin-top:0}
+main .art3 .txt h2{margin-top:2vw;}
 
 main .art3 {margin: 90px 0 70px; display: grid; grid-template-columns:1.2fr 2fr; justify-items: center;}
 main .art3 .imgbox1{display: none;}
