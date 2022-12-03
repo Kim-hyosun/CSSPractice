@@ -1,0 +1,200 @@
+@charset "utf-8";
+:root {
+    --green :#299c59;
+}
+html, body {margin:0;}
+body {font-family: "Noto Sans KR", "Malgun Gothic", 돋움, 굴림, "Open Sans"; overflow-x: hidden;}
+
+::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;}
+
+h1, h2, h3, h5, p, ul{padding: 0; margin:0;}
+h2 {font-size: 24px;}
+h3 {font-size:14px;}
+ul{list-style: none;}
+a { display: block; color:inherit; text-decoration: none;}
+img {vertical-align: top;}
+.ghostbtn {padding: 3px 5px 2px 5px; border:#555 solid 1px; margin:0; width: 60px; height:20px; line-height:20px;font-size: 10px; color:#555;}
+.ghostbtn:hover {background-color: var(--green); color:#fff; border-color: var(--green);}
+
+header {width: 100%; height: 51px; display: flex; background-color: #fff; padding: 10px; position:sticky; top:0; box-sizing: border-box; z-index: 9999; box-shadow: 0 1px 5px 1px rgb(0 0 0 / 20%);}
+header .logo {width:125px; height:31px; text-indent: -9999px; background: url(./images2/logo-m.png) no-repeat 0/contain;}
+header .toggle {margin-left:auto; width:42px; height: 32px; text-align: center;}
+header .toggle span{width:22px; line-height: 32px;}
+
+header .gnb {display: none; width:100%; position: absolute; left:0; top:100%; background-color: #fff;}
+header .gnb.active {display: block;}
+header .gnb > li > a {padding: 10px 15px; color:#555; font-size: 18px; font-weight: bold;}
+header .gnb > li:hover >a { background-color: var(--green); color:#fff;}
+header .gnb > li >.sub_menu {display:  none;}
+header .gnb > li:hover >.sub_menu {display: block;}
+
+header .gnb > li >.sub_menu >li> a {padding: 3px 20px; color:#555; font-size: 16px;}
+eader .gnb > li >.sub_menu >li:hover >a {text-decoration:var(--green) solid; color:var(--green);}
+:is(header) .ft_icon1,  .ft_icon2, .top_btn {display: none;}
+
+
+main .slideimg {width:100%; height:373px; background: url(./images2/visual01.jpg) no-repeat 50%/cover; text-align: center; color:#fff; text-shadow: 0 1px 2px rgb(0 0 0 / 20%); position:relative;}
+main .slideimg h2 {font-size:2.6rem;letter-spacing: 3px; font-weight: 500;position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); line-height: 1.2;}
+main .slideimg p {margin-top:10px; width:100%; font-size:13px; line-height: 1.6; position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);}
+
+main .art1 {width:100%; height:270px; padding: 30px 0 40px 0; background-color: #f2f2f2; text-align: center;}
+main .art1 p, main .art5 p{padding:5px 0 15px; font-size: 12px; color:#888;}
+main .art1 .contentBox {margin: 0 auto; display: flex; justify-content: center;}
+main .art1 .contentBox .ms {width: 29vw; padding: 10px;}
+main .art1 .contentBox .ms img {width:100%; height:22vw;}
+main .art1 .contentBox .ms .txt {height:13.5vw; padding:10px; box-sizing: border-box; background-color: #fff; text-align: center;}
+:is(main .art1 .contentBox .ms .txt) h3, h5 {font-weight: normal;}
+main .art1 .contentBox .ms .txt h5 {display: none; color:#888;}
+main .art1 .contentBox .ms .txt .ghostbtn {margin: 5px auto;}
+
+
+main .art2 {margin-top:40px;}
+main .art2 .imgbox, main .art3 .imgbox1{margin:60px auto; width: 96vw; height: 56.5vw; }
+main .art2 .imgbox{background: url(./images2/m-au01.jpg) no-repeat 50%/cover;}
+main .art3 .imgbox1{background: url(./images2/m-au02.jpg) no-repeat 50%/cover;}
+main .art2 .txt, main .art3 .txt {margin:30px auto; width:96vw;}
+main .art2 .txt h2, main .art3 .txt h2{font-size: 30px;}
+main .art2 .txt p strong, main .art3 .txt p strong{font-size: 14px; color:#333;}
+main .art2 .txt p, main .art3 .txt p{margin: 20px 0; font-size: 13px; color:#888;}
+main .art2 .txt .ghostbtn, main .art3 .txt .ghostbtn, main .art4 .layer .ghostbtn{padding: 6px 15px 5px; font-size: 11px; width:70px; text-align: center;}
+
+main .art4 {padding: 50px 0; width: 100%; height:125px; background: url(./images2/an-img.jpg) no-repeat fixed 0 50%/cover; text-align: center; color: #fff;}
+main .art4 .layer h2{font-size: 22px; font-weight: normal;}
+main .art4 .layer p{font-size: 12px; margin:20px 0;}
+main .art4 .layer .ghostbtn{margin: 0 auto; border-color: #fff; color:#fff;}
+main .art4 .layer .ghostbtn:hover {border-color:orangered; background-color: orangered;}
+
+main .art5 {margin: 50px auto 10px; text-align: center;}
+main .art5 .contentBox{display: grid; grid-template-columns: repeat(2,1fr); margin: 10px auto;}
+main .art5 .contentBox .key{width:46vw; height: 90vw; padding:10px;}
+main .art5 .contentBox .key img{width: 100%; height: 70vw;}
+main .art5 .contentBox .key .txt{text-align: left; padding:10px; border:#ddd 1px solid;}
+main .art5 .contentBox .key .txt h3{font-weight: normal; font-size:14px; color:#333;}
+main .art5 .contentBox .key .txt h5{font-weight: normal; font-size:11px; margin-top:5px; color:#777;}
+
+main .art6 {background-color: #299c59; padding:10px;}
+main .art6 .contentBox .view {padding: 10px 15px 10px 15px; border-bottom: #fff solid 1px; color:#fff; display: grid; grid-template-columns: 1fr 3.5fr;}
+main .art6 .contentBox .view:last-child {border-bottom: none;}
+main .art6 .contentBox a {width: 55px; height:50px; align-self: flex-start; margin-top:10px;}
+main .art6 .contentBox img {width: 100%; height:100%;}
+main .art6 .contentBox .view .txt h3{font-size: 16px;}
+main .art6 .contentBox .view .txt h5{font-size: 10px; margin: 5px 0 10px;}
+main .art6 .contentBox .view .txt .ghostbtnRound {width:65px; height:23px; border-radius:20px; border: 1px solid #fff; font-size:10px; padding: 4px 20px 3px 20px; box-sizing: border-box; margin-bottom: 10px;}
+main .art6 .contentBox .view .txt .ghostbtnRound:hover {border-color:orangered; background-color: orangered;}
+
+footer {background-color: #777; text-align: center; color:#999; font-size: 12px; padding:0 0 20px;}
+footer img{margin:30px 0 10px;}
+footer .policy {display: flex; justify-content: center;}
+footer .policy li {display: flex; position: relative;}
+footer .policy li img{position:absolute; top:-15px;}
+footer .policy a{color:#ddd; font-size: 12px; padding:10px; box-sizing: border-box;}
+footer .sns {display: flex; justify-content: center;}
+footer .sns a{padding:10px;}
+footer .sns img{margin:0;}
+footer .address > li > img {display: none;}
+
+@media (min-width:768px) {
+.hide1 {display: none;}
+main .art1 {height:445px;}
+main .art1 .contentBox .ms .txt {height:16vw; text-align: left; padding:15px;}
+main .art1 .contentBox .ms .txt h3{font-size: 18px;}
+main .art1 .contentBox .ms .txt h5 {display: block; font-size: 11px; margin:10px 0;}
+main .art1 .contentBox .ms .txt .ghostbtn {margin:0; padding: 6px 15px 5px; font-size: 11px; width:70px; text-align: center;}
+
+main .art2 {margin:40px auto; display: grid; grid-template-columns: 2fr 1fr;} 
+main .art2 .imgbox {width: 62vw; margin:2vw;}
+main .art2 .txt {width: 28vw; text-align: justify;}
+
+main .art3 {margin: 90px 0 70px; display: grid; grid-template-columns:1.2fr 2fr; justify-items: center;}
+main .art3 .imgbox1{display: none;}
+main .art3 .imgbox2{width:48vw; height:48vw; background: url(./images2/m-au02.jpg) no-repeat 50%/cover;  margin:2vw;}
+main .art3 .txt {width: 28vw; margin:10px 0; text-align: justify; justify-self: end;}
+
+main .art5 {margin: 50px 0;}
+main .art5 .contentBox {grid-template-columns: repeat(4, 1fr); justify-items:center ;}
+main .art5 .contentBox .key {width: 22.5vw; height:43vw; padding:0;}
+main .art5 .contentBox .key img{height:34vw;}
+
+main .art6 {padding: 20px 15px 18px 15px;}
+main .art6 .contentBox {display: grid; grid-template-columns: repeat(3, 1fr);}
+main .art6 .contentBox .view {border-bottom:none; border-right: 1px solid #fff; grid-template-columns: 1.2fr 3fr; padding-bottom:0;}
+main .art6 .contentBox .view .txt h3{font-size: 18px;}
+main .art6 .contentBox .view .txt h5{font-size: 12px; text-align: justify;}
+main .art6 .contentBox .view:last-child {border-right: none;}
+
+footer {display:grid; grid-template-columns: 1.5fr 8.5fr; text-align: left; background-color: #444; padding-bottom:80px;}
+footer img {margin-left:15px;}
+footer .txt {font-size: 14px; position: relative;}
+footer .txt .sns{position:absolute; right:20px; top:20px;}
+footer .txt .policy{justify-content: left; margin:30px 0 10px;}
+footer .txt .policy a{font-size: 15px; padding-top:0;}
+footer .txt .policy li:first-child a{padding-left: 0;}
+footer .policy li img{left:-15px; top:-24px;}
+footer .address {display: flex;}
+footer .address li{padding-right:25px; height: 15px; margin-bottom: 12px; position: relative;}
+footer .address li img{display: block; position:absolute; top:-25px; left:-25px;}
+
+
+}
+
+@media (min-width:1280px) {
+h2 {font-size: 34px;}
+header {height: 90px; align-items: center; padding:10px 50px;}
+header .logo {width: 180px; height:45px; background: url(./images2/logo.png) no-repeat 0/contain;}
+header .toggle {display: none;}
+:is(header) .ft_icon1,  .ft_icon2, .top_btn {display: block;}
+header .gnb {width:750px; position:static; display: flex; margin-left:auto; margin-right: auto;}
+header .gnb > li >a {font-weight: 500; font-size: 19px;}
+header .gnb >li:after {content: ""; display: none; width:150px; height:2px; background-color: var(--green); position:absolute; bottom:0; } 
+header .gnb > li:hover>a{background-color:transparent; color:#555;}
+header .gnb >li:hover:after {display: block;}
+header .gnb a {width:150px; text-align: center; box-sizing: border-box;}
+header .gnb > li >.sub_menu > li > a{padding: 12px 20px;}
+header .ft_icon1 {padding-right:10px;}
+header .gnb > li >.sub_menu { position: absolute; top:100%; background-color: #333;}
+header .top_btn a{width: 44px; height:44px; position:fixed; bottom:20px; right:10px;}
+
+main .slideimg{height: 720px;}
+main .slideimg h2 {font-size: 60px;}
+main .slideimg p {font-size: 18px;}
+
+main .art1 {height:44vw; padding-top:60px;}
+main .art1 p {font-size: 17px;}
+main .art1 .contentBox .ms .txt {padding:25px; height:12vw;}
+main .art1 .contentBox .ms .txt h3 {font-size: 22px;}
+main .art1 .contentBox .ms .txt h5 {font-size: 14px;}
+main .art1 .contentBox .ms .txt .ghostbtn, main .art2 .txt .ghostbtn, main .art3 .txt .ghostbtn, main .art4 .layer .ghostbtn {font-size: 12px; padding: 6px 30px 6px 30px; white-space: nowrap;}
+
+main .art2 {margin:140px auto; grid-template-columns: 1.7fr 1fr;}
+main .art2 .imgbox {width:50vw; justify-self: end;}
+main .art2 .txt, main .art3 .txt {width:24vw; margin-left: 0;}
+main .art2 .txt h2, main .art3 .txt h2{font-size: 56px;}
+main .art2 .txt p, main .art3 .txt p {font-size: 17px;}
+main .art2 .txt p strong, main .art3 .txt p strong{font-size: 24px; font-weight: 500;}
+
+main .art3 {margin-bottom: 120px;}
+main .art3 .imgbox2 {justify-self: start; width:40vw; height: 40vw;}
+main .art3 .txt {width:21vw;}
+
+main .art4 {padding: 120px 30px 120px 30px;}
+main .art4 .layer h2 {font-size:34px;}
+main .art4 .layer p{font-size:17px;}
+main .art4 .layer p .hide{display: none;}
+
+main .art5 .contentBox {width:80vw;}
+main .art5 .contentBox .key{width:19vw; height: 34vw;}
+main .art5 .contentBox .key img{height:26vw;}
+main .art5 .contentBox .key .txt{padding:15px;}
+main .art5 .contentBox .key .txt h3{font-size:18px;}
+main .art5 .contentBox .key .txt h5{font-size:13px;}
+
+main .art6 .contentBox {width:81vw; margin:0 auto;}
+main .art6 .contentBox .view a {justify-self: center;}
+main .art6 .contentBox .view .txt {width:16vw;}
+main .art6 .contentBox .view .txt .ghostbtnRound{padding: 4px 20px; font-size: 11px; line-height: 14px;}
+
+footer {padding-top:20px;}
+footer > a {justify-self: end; margin-right: 36px;}
+footer .txt .sns {right:10vw;}
+footer .txt .sns a{padding:4px;}
+}
